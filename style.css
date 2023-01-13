@@ -1,0 +1,95 @@
+:root {
+  --blue-color: #4671c0;
+  --brown-color: #584e4a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+  background-color: var(--brown-color);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}
+
+.content-inner {
+  height: 50%;
+  padding: 50px 20%;
+}
+
+.content p {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+.menu-toggle {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100px;
+  height: 80px;
+  cursor: pointer;
+  background-color: var(--blue-color);
+  border-bottom-right-radius: 100%;
+}
+
+i {
+  color: white;
+}
+
+.menu-open,
+.menu-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -12px;
+}
+
+.menu-items {
+  position: fixed;
+  bottom: 0;
+  left: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-items li {
+  list-style: none;
+  height: 60px;
+  margin-bottom: 50px;
+  transform: translateX(-300px);
+}
+
+.menu-items li:nth-child(2) {
+  margin-left: 40px;
+}
+.menu-items li:nth-child(3) {
+  margin-left: 80px;
+}
+
+.menu-items li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.menu-items li a .icon {
+  display: inline-block;
+  margin-right: 15px;
+}
